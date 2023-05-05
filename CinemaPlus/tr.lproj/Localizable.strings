@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  CinemaPlus
+
+  Created by Alparslan Cafer on 29.04.2023.
+  
+*/
+"home_title" =  "Filmler";
+"home_category_popular" = "Popüler";
+"home_category_topRated" = "En Çok Oy Alan";
+"home_category_upcoming" = "Yaklaşan";
+

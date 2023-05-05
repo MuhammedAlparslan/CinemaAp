@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.6.4)
+  - PanModal (1.2.7)
+  - SDWebImage (5.15.6):
+    - SDWebImage/Core (= 5.15.6)
+  - SDWebImage/Core (5.15.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - PanModal
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PanModal
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  SDWebImage: d47d81bea8a77187896b620dc79c3c528e8906b9
+
+PODFILE CHECKSUM: 13136d77a85299f5afbc6ab4cfd3998591450cea
+
+COCOAPODS: 1.11.3

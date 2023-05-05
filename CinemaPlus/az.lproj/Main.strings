@@ -1,0 +1,12 @@
+
+/* Class = "UISearchBar"; placeholder = "Search Movie"; ObjectID = "32G-al-Lpb"; */
+"32G-al-Lpb.placeholder" = "Search Movie";
+
+/* Class = "UISearchBar"; prompt = "You can search for movies from here"; ObjectID = "32G-al-Lpb"; */
+"32G-al-Lpb.prompt" = "You can search for movies from here";
+
+/* Class = "UILabel"; text = "Popular"; ObjectID = "NTH-uu-ccp"; */
+"NTH-uu-ccp.text" = "Popular";
+
+/* Class = "UILabel"; text = "Movies"; ObjectID = "YFv-K3-TFP"; */
+"YFv-K3-TFP.text" = "Movies";

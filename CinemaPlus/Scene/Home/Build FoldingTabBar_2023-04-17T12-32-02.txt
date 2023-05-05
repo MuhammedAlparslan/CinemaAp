@@ -1,0 +1,30 @@
+
+Showing Recent Issues
+
+Prepare build
+note: Building targets in dependency order
+error: Multiple commands produce '/Users/alparslancafer/Library/Developer/Xcode/DerivedData/FoldingTabBar-bsqgillgssmqhifwgsimgxhnqmap/Build/Products/Debug-iphonesimulator/FoldingTabBar.framework/Info.plist'
+    note: Target 'FoldingTabBar' (project 'FoldingTabBar') has copy command from '/Users/alparslancafer/Downloads/FoldingTabBar.iOS-master/FoldingTabBar/Resources/Info.plist' to '/Users/alparslancafer/Library/Developer/Xcode/DerivedData/FoldingTabBar-bsqgillgssmqhifwgsimgxhnqmap/Build/Products/Debug-iphonesimulator/FoldingTabBar.framework/Info.plist'
+    note: Target 'FoldingTabBar' (project 'FoldingTabBar') has process command with output '/Users/alparslancafer/Library/Developer/Xcode/DerivedData/FoldingTabBar-bsqgillgssmqhifwgsimgxhnqmap/Build/Products/Debug-iphonesimulator/FoldingTabBar.framework/Info.plist'
+
+
+Building targets in dependency order
+
+Multiple commands produce '/Users/alparslancafer/Library/Developer/Xcode/DerivedData/FoldingTabBar-bsqgillgssmqhifwgsimgxhnqmap/Build/Products/Debug-iphonesimulator/FoldingTabBar.framework/Info.plist'
+
+
+Build target FoldingTabBar of project FoldingTabBar with configuration Debug
+/Users/alparslancafer/Downloads/FoldingTabBar.iOS-master/FoldingTabBar.xcodeproj: warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 11.0 to 16.4.99. (in target 'FoldingTabBar' from project 'FoldingTabBar')
+/Users/alparslancafer/Downloads/FoldingTabBar.iOS-master/FoldingTabBar.xcodeproj: warning: The Copy Bundle Resources build phase contains this target's Info.plist file '/Users/alparslancafer/Downloads/FoldingTabBar.iOS-master/FoldingTabBar/Resources/Info.plist'. (in target 'FoldingTabBar' from project 'FoldingTabBar')
+warning: duplicate output file '/Users/alparslancafer/Library/Developer/Xcode/DerivedData/FoldingTabBar-bsqgillgssmqhifwgsimgxhnqmap/Build/Products/Debug-iphonesimulator/FoldingTabBar.framework/Info.plist' on task: ProcessInfoPlistFile /Users/alparslancafer/Library/Developer/Xcode/DerivedData/FoldingTabBar-bsqgillgssmqhifwgsimgxhnqmap/Build/Products/Debug-iphonesimulator/FoldingTabBar.framework/Info.plist /Users/alparslancafer/Downloads/FoldingTabBar.iOS-master/FoldingTabBar/Resources/Info.plist (in target 'FoldingTabBar' from project 'FoldingTabBar')
+
+
+/Users/alparslancafer/Downloads/FoldingTabBar.iOS-master/FoldingTabBar.xcodeproj: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 11.0 to 16.4.99.
+
+/Users/alparslancafer/Downloads/FoldingTabBar.iOS-master/FoldingTabBar.xcodeproj: The Copy Bundle Resources build phase contains this target's Info.plist file '/Users/alparslancafer/Downloads/FoldingTabBar.iOS-master/FoldingTabBar/Resources/Info.plist'.
+
+duplicate output file '/Users/alparslancafer/Library/Developer/Xcode/DerivedData/FoldingTabBar-bsqgillgssmqhifwgsimgxhnqmap/Build/Products/Debug-iphonesimulator/FoldingTabBar.framework/Info.plist' on task: ProcessInfoPlistFile /Users/alparslancafer/Library/Developer/Xcode/DerivedData/FoldingTabBar-bsqgillgssmqhifwgsimgxhnqmap/Build/Products/Debug-iphonesimulator/FoldingTabBar.framework/Info.plist /Users/alparslancafer/Downloads/FoldingTabBar.iOS-master/FoldingTabBar/Resources/Info.plist
+
+
+
+Build failed    17.04.2023 12:32    0.4 seconds
