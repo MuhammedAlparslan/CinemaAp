@@ -10,48 +10,42 @@ import PanModal
 
 class CategoryController: UIViewController {
     @IBOutlet private weak var categoryTableView: UITableView!
-    
     let viewModel = CategoryViewModel()
+    var callBack: ((Category) -> ())?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure()
-        
-    }
-    
-    func configure() {
-        viewModel.getItems()
-        viewModel.successCallback = {
-            self.categoryTableView.reloadData()
-        }
         
     }
 }
 
-
-extension CategoryController: UITableViewDelegate, UITableViewDataSource, PanModalPresentable {
-    var panScrollable: UIScrollView? {
-    return categoryTableView
-    }
-    
+extension CategoryController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.category.count
+        viewModel.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as! CategoryCell
-        cell.configure(data: viewModel.category[indexPath.row])
+        cell.configure(data: viewModel.items[indexPath.item].rawValue.localizable)
         return cell
     }
-  
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dismiss(animated: true)
+    }
+}
+
+extension CategoryController: PanModalPresentable {
+    
+    var panScrollable: UIScrollView? {
+        return categoryTableView
+    }
     
     var shortFormHeight: PanModalHeight {
         return .contentHeight(300)
     }
-
+    
     var longFormHeight: PanModalHeight {
         return .maxHeightWithTopInset(40)
     }
-    
-    
 }

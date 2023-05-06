@@ -10,10 +10,10 @@ import Foundation
 
 class LanguageViewModel {
     
-    let languageData = [Language(name: "Azerbaijan", image: "Azerbaijan"),
-                        Language(name: "Hebrew",     image: "Israel"),
-                        Language(name: "Turkish",    image: "Turkey"),
-                        Language(name: "Russian",    image: "Russia"),
-                        Language(name: "English",    image: "England")
+    let languageData = [Language(name: "Azerbaijan", image: "Azerbaijan", code: "az"),
+                        Language(name: "Hebrew",     image: "Israel", code: "hr"),
+                        Language(name: "Turkish",    image: "Turkey", code: "tr"),
+                        Language(name: "Russian",    image: "Russia", code: "ru"),
+                        Language(name: "English",    image: "England", code: "en")
                         ]
 }

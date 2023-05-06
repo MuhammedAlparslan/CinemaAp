@@ -46,21 +46,7 @@ extension LanguageController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            changeLanguage(language: "az")
-        }
-        if indexPath.row == 1 {
-            changeLanguage(language: "he")
-        }
-        if indexPath.row == 2 {
-            changeLanguage(language: "tr")
-        }
-        if indexPath.row == 3 {
-            changeLanguage(language: "ru")
-        }
-        if indexPath.row == 4 {
-            changeLanguage(language: "en")
-        }
+        changeLanguage(language: viewModel.languageData[indexPath.item].code)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -10,4 +10,5 @@ import Foundation
 struct Language {
     let name  : String
     let image : String
+    let code: String
 }

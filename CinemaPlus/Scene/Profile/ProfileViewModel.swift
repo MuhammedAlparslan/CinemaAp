@@ -9,13 +9,7 @@ import Foundation
 
 class ProfileViewModel {
     
-    var profileData = [Profile(name: "Profile",  image: "ProfileIcon"),
-                       Profile(name: "Wallet",   image: "WalletIcon"),
-                       Profile(name: "Language", image: "LanguageIcon")
-
-    ]
-    
-    
-                     
-                    
+    var profileData = [Profile(name: "Profile",  image: "ProfileIcon", type: .profile),
+                       Profile(name: "Wallet",   image: "WalletIcon", type: .wallet),
+                       Profile(name: "Language", image: "LanguageIcon", type: .language)]
 }

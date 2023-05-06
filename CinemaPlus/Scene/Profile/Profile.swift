@@ -10,6 +10,7 @@ import Foundation
 struct Profile {
     let name  : String
     let image : String
+    let type: Profiles
 }
 
 enum Profiles: String {

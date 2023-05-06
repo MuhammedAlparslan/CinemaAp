@@ -11,7 +11,7 @@ class CategoryCell: UITableViewCell {
 
     @IBOutlet private weak var categoryLabel: UILabel!
     
-    func configure(data: CategoryList) {
-        categoryLabel.text = data.title
+    func configure(data: String) {
+        categoryLabel.text = data
     }
 }

@@ -35,9 +35,18 @@ extension ProfileController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 2 {
+        switch viewModel.profileData[indexPath.item].type {
+        case .language:
             let controller = storyboard?.instantiateViewController(identifier: "LanguageController") as! LanguageController
-            navigationController?.show(controller, sender: nil)        }
+            navigationController?.show(controller, sender: nil)
+            
+        default:
+            break
+        }
+//        if viewModel.profileData[indexPath.item].type == .language {
+//            let controller = storyboard?.instantiateViewController(identifier: "LanguageController") as! LanguageController
+//            navigationController?.show(controller, sender: nil)
+//        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
