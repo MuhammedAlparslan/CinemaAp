@@ -4,6 +4,305 @@
    <FileRef
       location = "group:CinemaPlus.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:CinemaPlus"
+      name = "CinemaPlus">
+      <FileRef
+         location = "group:CinemaPlus/AppDelegate.swift">
+      </FileRef>
+      <FileRef
+         location = "group:CinemaPlus/SceneDelegate.swift">
+      </FileRef>
+      <Group
+         location = "group:CinemaPlus/Helper"
+         name = "Helper">
+         <Group
+            location = "group:CinemaPlus/Helper/XI&#x307;B"
+            name = "XIB">
+            <Group
+               location = "group:CinemaPlus/Helper/XI&#x307;B/Profile"
+               name = "Profile">
+               <FileRef
+                  location = "group:CinemaPlus/Helper/XI&#x307;B/Profile/ProfileCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:CinemaPlus/Helper/XI&#x307;B/Profile/LanguageCell.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:CinemaPlus/Helper/XI&#x307;B/CollectionCell"
+               name = "CollectionCell">
+               <FileRef
+                  location = "group:CinemaPlus/Helper/XI&#x307;B/CollectionCell/CollectionCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:CinemaPlus/Helper/XI&#x307;B/CollectionCell/CollectionCell.xib">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:CinemaPlus/Helper/XI&#x307;B/Details"
+               name = "Details">
+               <FileRef
+                  location = "group:CinemaPlus/Helper/XI&#x307;B/Details/MovieCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:CinemaPlus/Helper/XI&#x307;B/Details/MovieCellViewModel.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:CinemaPlus/Helper/XI&#x307;B/Details/MovieCell.xib">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:CinemaPlus/Helper/XI&#x307;B/ImageLabelCell"
+               name = "ImageLabelCell">
+               <FileRef
+                  location = "group:CinemaPlus/Helper/XI&#x307;B/ImageLabelCell/ImageLabelCell.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:CinemaPlus/Helper/XI&#x307;B/ImageLabelCell/ImageLabelCell.xib">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/Helper/Extension"
+            name = "Extension">
+            <FileRef
+               location = "group:CinemaPlus/Helper/Extension/UIImage.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Helper/Extension/string.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/Helper/Fonts"
+            name = "Fonts">
+            <FileRef
+               location = "group:CinemaPlus/Helper/Fonts/Poppins-Bold.ttf">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Helper/Fonts/Poppins-ExtraBoldItalic.ttf">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Helper/Fonts/Poppins-Medium.ttf">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Helper/Fonts/Poppins-Regular.ttf">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Helper/Fonts/Poppins-SemiBold.ttf">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:CinemaPlus/NetworkManager"
+         name = "NetworkManager">
+         <Group
+            location = "group:CinemaPlus/NetworkManager/Core"
+            name = "Core">
+            <FileRef
+               location = "group:CinemaPlus/NetworkManager/Core/NetworkHelper.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/NetworkManager/Core/NetworkManager.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/NetworkManager/SearchManager"
+            name = "SearchManager">
+            <FileRef
+               location = "group:CinemaPlus/NetworkManager/SearchManager/SearchHelper.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/NetworkManager/SearchManager/SearchManager.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/NetworkManager/PeopleManager"
+            name = "PeopleManager">
+            <FileRef
+               location = "group:CinemaPlus/NetworkManager/PeopleManager/PeopleHelper.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/NetworkManager/PeopleManager/PeopleManager.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/NetworkManager/HomeManager"
+            name = "HomeManager">
+            <FileRef
+               location = "group:CinemaPlus/NetworkManager/HomeManager/HomeManager.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/NetworkManager/HomeManager/HomeHelper.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:CinemaPlus/Scene"
+         name = "Scene">
+         <Group
+            location = "group:CinemaPlus/Scene/Home"
+            name = "Home">
+            <FileRef
+               location = "group:CinemaPlus/Scene/Home/Movie(Struct).swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Home/HomeController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Home/HomeViewModel.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Home/HomeCell.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/Scene/Details"
+            name = "Details">
+            <FileRef
+               location = "group:CinemaPlus/Scene/Details/Details.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Details/DetailsController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Details/DetailsViewModel.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/Scene/People"
+            name = "People">
+            <FileRef
+               location = "group:CinemaPlus/Scene/People/Actor(STRUCT).swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/People/ActorController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/People/ActorViewModel.swift">
+            </FileRef>
+            <Group
+               location = "group:CinemaPlus/Scene/People/MovieTitle"
+               name = "MovieTitle">
+               <FileRef
+                  location = "group:CinemaPlus/Scene/People/MovieTitle/Title.swift">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/Scene/Category"
+            name = "Category">
+            <FileRef
+               location = "group:CinemaPlus/Scene/Category/CategoryController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Category/CategoryViewModel.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Category/CategoryCell.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/Scene/Language"
+            name = "Language">
+            <FileRef
+               location = "group:CinemaPlus/Scene/Language/Language.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Language/LanguageController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Language/LanguageViewModel.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/Scene/Profile"
+            name = "Profile">
+            <FileRef
+               location = "group:CinemaPlus/Scene/Profile/Profile.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Profile/ProfileController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Profile/ProfileViewModel.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:CinemaPlus/Scene/Search"
+            name = "Search">
+            <FileRef
+               location = "group:CinemaPlus/Scene/Search/SearchController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CinemaPlus/Scene/Search/SearchViewModel.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:CinemaPlus"
+         name = "Main.storyboard">
+         <FileRef
+            location = "group:CinemaPlus/Base.lproj/Main.storyboard">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/tr.lproj/Main.strings">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/az.lproj/Main.strings">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/he.lproj/Main.strings">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/ru.lproj/Main.strings">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:CinemaPlus"
+         name = "LaunchScreen.storyboard">
+         <FileRef
+            location = "group:CinemaPlus/Base.lproj/LaunchScreen.storyboard">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/tr.lproj/LaunchScreen.strings">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/az.lproj/LaunchScreen.strings">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/he.lproj/LaunchScreen.strings">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/ru.lproj/LaunchScreen.strings">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:CinemaPlus/Assets.xcassets">
+      </FileRef>
+      <FileRef
+         location = "group:CinemaPlus/Info.plist">
+      </FileRef>
+      <Group
+         location = "group:CinemaPlus"
+         name = "Localizable.strings">
+         <FileRef
+            location = "group:CinemaPlus/en.lproj/Localizable.strings">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/az.lproj/Localizable.strings">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/tr.lproj/Localizable.strings">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/he.lproj/Localizable.strings">
+         </FileRef>
+         <FileRef
+            location = "group:CinemaPlus/ru.lproj/Localizable.strings">
+         </FileRef>
+      </Group>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>

@@ -11,7 +11,9 @@ class HomeController: UIViewController {
     @IBOutlet private weak var homeCollection: UICollectionView!
     @IBOutlet private weak var titleLabel: UILabel!
     
-    var viewModel = HomeViewModel()
+    private var viewModel = HomeViewModel()
+    private var coordinator: HomeCoordinator?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,7 @@ class HomeController: UIViewController {
     }
     
     private func configureUI() {
+        coordinator = HomeCoordinator(navigationController: navigationController ?? UINavigationController())
         titleLabel.text = "home_title".localizable
         homeCollection.reloadData()
     }
@@ -35,8 +38,7 @@ class HomeController: UIViewController {
     }
     
     @IBAction func searchBarClicked(_ sender: Any) {
-        let controller = storyboard?.instantiateViewController(identifier: "SearchController") as! SearchController
-        navigationController?.show(controller, sender: nil)
+        coordinator?.showClickedController()
     }
     
     @IBAction func categryClicked(_ sender: UIBarButtonItem) {

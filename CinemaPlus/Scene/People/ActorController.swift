@@ -13,6 +13,7 @@ class ActorController: UIViewController  {
     private var viewModel = PeopleViewModel()
     private let cellId = "\(ImageLabelCell.self)"
     private let refreshController = UIRefreshControl()
+    private var coordinator: ActorCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class ActorController: UIViewController  {
     
     private func configureUI() {
         navigationItem.title = "Actors and Actresses"
+        coordinator = ActorCoordinator(navigationController: navigationController ?? UINavigationController())
         refreshController.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
         actorCollection.refreshControl = refreshController
         actorCollection.refreshControl?.tintColor = .purple
@@ -55,11 +57,9 @@ extension ActorController: UICollectionViewDelegate, UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let controller = storyboard?.instantiateViewController(identifier: "DetailsController") as! DetailsController
-        controller.viewModel.actorId = viewModel.items[indexPath.row].id ?? 0
-        navigationController?.show(controller, sender: nil)
+        coordinator?.showActorController(actorId: viewModel.items[indexPath.row].id ?? 0)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = actorCollection.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! ImageLabelCell
         cell.confiqure(data: viewModel.items[indexPath.item])
