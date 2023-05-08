@@ -16,7 +16,10 @@ enum HomeCategory: String {
 }
 
 enum HomeEndPoint: String {
-    case popular  = "movie/popular"
+    case popular    = "movie/popular"
+    case topRated   = "movie/top_rated"
+    case upcoming   = "movie/upcoming"
+
     
     var path: String {
         NetworkHelper.shared.urlConfiqure(path: self.rawValue)

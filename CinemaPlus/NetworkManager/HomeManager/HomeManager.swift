@@ -17,8 +17,10 @@ class HomeManager {
         switch category {
         case .popular:
             url = HomeEndPoint.popular.path
-        default:
-            break
+        case .topRated:
+            url = HomeEndPoint.topRated.path
+        case .upcoming:
+            url = HomeEndPoint.upcoming.path
         }
         
         NetworkManager.shared.request(model: Movie.self, url: url, complete: completion)

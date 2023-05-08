@@ -28,7 +28,7 @@ class HomeController: UIViewController {
     }
     
     private func confiqureViewModel() {
-        viewModel.getItems()
+        viewModel.getMovieItems(category: .popular)
         viewModel.successCallback = {
             self.homeCollection.reloadData()
         }
@@ -40,24 +40,30 @@ class HomeController: UIViewController {
     }
     
     @IBAction func categryClicked(_ sender: UIBarButtonItem) {
-                let controller = storyboard?.instantiateViewController(identifier: "CategoryController") as! CategoryController
-                navigationController?.presentPanModal(controller, sourceView: nil)
-            }
+        let controller = storyboard?.instantiateViewController(identifier: "CategoryController") as! CategoryController
+        controller.delegate = self
+        navigationController?.presentPanModal(controller, sourceView: nil)
     }
-
+}
 
 extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource,  UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.category.count
-    }
+     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
         cell.configure(data: viewModel.category[indexPath.item])
         return cell
-    }
+     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: homeCollection.frame.width, height: 318)
+        CGSize(width: homeCollection.frame.width, height: 320)
+    }
+}
+
+extension HomeController: CategoryProtocol {
+    func getCategory(category: HomeCategory) {
+        viewModel.getMovieItems(category: category)
     }
 }

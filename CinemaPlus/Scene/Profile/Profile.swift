@@ -10,11 +10,11 @@ import Foundation
 struct Profile {
     let name  : String
     let image : String
-    let type: Profiles
+    let type  : Profiles
 }
 
 enum Profiles: String {
-    case profile = "Profile"
-    case wallet = "Wallet"
+    case profile  = "Profile"
+    case wallet   = "Wallet"
     case language = "Language"
 }

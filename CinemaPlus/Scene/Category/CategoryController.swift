@@ -8,10 +8,15 @@
 import UIKit
 import PanModal
 
+protocol CategoryProtocol {
+    func getCategory(category: HomeCategory)
+}
+
 class CategoryController: UIViewController {
     @IBOutlet private weak var categoryTableView: UITableView!
     let viewModel = CategoryViewModel()
-    var callBack: ((Category) -> ())?
+    
+    var delegate: CategoryProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +36,7 @@ extension CategoryController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.getCategory(category: viewModel.items[indexPath.item])
         dismiss(animated: true)
     }
 }

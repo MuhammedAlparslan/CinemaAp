@@ -14,18 +14,13 @@ struct Category {
 
 class HomeViewModel {
     
-    var category = [Category]()
-    var successCallback: (()->())?
-    var errorCallback: ((String)->())?
+    var category        = [Category]()
+    var successCallback : (()->())?
+    var errorCallback   : ((String)->())?
     
-    func getItems() {
-        let items: [HomeCategory] = [.popular, .topRated, .upcoming ]
-        for item in items {
-            getMovieItems(category: item)
-        }
-    }
     
-    private func getMovieItems(category: HomeCategory) {
+    func getMovieItems(category: HomeCategory) {
+        self.category.removeAll()
         HomeManager.shared.getMovieItems(category: category) { movieData, error in
             if let error = error {
                 self.errorCallback?(error)

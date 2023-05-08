@@ -19,6 +19,7 @@ class ImageLabelCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         topImage.layer.cornerRadius = 20
+       
     }
     
     func confiqure(data: ImageLabelCellProtocol) {
