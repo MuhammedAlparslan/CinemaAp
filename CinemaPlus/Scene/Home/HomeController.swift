@@ -42,9 +42,10 @@ class HomeController: UIViewController {
     }
     
     @IBAction func categryClicked(_ sender: UIBarButtonItem) {
-        let controller = storyboard?.instantiateViewController(identifier: "CategoryController") as! CategoryController
-        controller.delegate = self
-        navigationController?.presentPanModal(controller, sourceView: nil)
+//        let controller = storyboard?.instantiateViewController(identifier: "CategoryController") as! CategoryController
+//        controller.delegate = self
+//        navigationController?.presentPanModal(controller, sourceView: nil)
+        coordinator?.showClickedCategory(data: \(viewModel.))
     }
 }
 
