@@ -18,6 +18,8 @@ class CategoryController: UIViewController {
     
     var delegate: CategoryProtocol?
     
+    var didCategorySelected: ((HomeCategory)->())?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,7 +38,8 @@ extension CategoryController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.getCategory(category: viewModel.items[indexPath.item])
+//        delegate?.getCategory(category: viewModel.items[indexPath.item])
+        didCategorySelected?(viewModel.items[indexPath.item])
         dismiss(animated: true)
     }
 }

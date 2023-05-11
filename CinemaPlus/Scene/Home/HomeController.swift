@@ -42,11 +42,11 @@ class HomeController: UIViewController {
     }
     
     @IBAction func categryClicked(_ sender: UIBarButtonItem) {
-//        let controller = storyboard?.instantiateViewController(identifier: "CategoryController") as! CategoryController
-//        controller.delegate = self
-//        navigationController?.presentPanModal(controller, sourceView: nil)
-        coordinator?.showClickedCategory(data: \(viewModel.))
-    }
+//        coordinator?.showClickedCategory(vc: self)
+        coordinator?.showClickedCategory2(complete: { category in
+            self.viewModel.getMovieItems(category: category)
+        })
+     }
 }
 
 extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource,  UICollectionViewDelegateFlowLayout {
